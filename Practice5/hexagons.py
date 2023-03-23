@@ -4,9 +4,11 @@
 #
 
 n=1
+# use the while-loop to calculate first five plots
 while n<6:# first five
+    # use formula to calculate 
     h = 2 * n * (2 * n - 1) / 2
-    n=n+1#next one
+    n=n+1 # next figure
 
     print(h)
 #first: 1.0 second: 6.0 third:15.0 forth:28.0 fifth: 45.0
