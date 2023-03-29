@@ -1,0 +1,7 @@
+Question: How have new cases and total cases developed over time in the UK??
+
+Answer: 
+In the main python file, the answer code starts at line 109.
+Red one is the total cases in UK and blue one is the new cases in UK.
+
+Since the Feb of 2020, Infected people had begun to appear and had a rapid increase in March. Since the virus was very contagious，the total cases，the growth was extremely rapid.
