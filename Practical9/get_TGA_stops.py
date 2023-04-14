@@ -1,7 +1,7 @@
 
 # Define the input and output file names
 gene_file = "Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
-output_file = "GA_genes.fa"
+output_file = "TGA_genes.fa"
 
 # Open the input and output files
 with open(gene_file, "r") as input_handle, open(output_file, "w") as output_handle:
