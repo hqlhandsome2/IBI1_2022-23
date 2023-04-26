@@ -1,0 +1,9 @@
+The numbers 3579, 3717, and 3592 represent the alignment scores between the human-mouse, human-cat, and mouse-cat pairs of amino acid sequences, respectively, calculated using the BLOSUM62 substitution matrix.
+A higher alignment score indicates a greater similarity between the aligned sequences, as more amino acid pairs are matching according to the substitution matrix. Therefore, the higher score between two sequences, the more similar they are to each other based on the scoring matrix used. So, human and cat are most closely related.
+
+The percentages 82.11180124223603% (human and mouse), 85.21739130434783% (human and cats), and 81.73913043478261% (mouse and cat) represent the percentage of identical amino acids between the pairs of amino acid sequences, calculated by dividing the number of identical amino acids by the total length of the sequence and then multiplying by 100.
+In this case, the percentages of identical amino acids indicate that the human-cat pair has the highest similarity based on this criterion, while the human-mouse and mouse-cat pairs have lower similarity. 
+
+The ACE2 amino acid sequences of humans and cats are more similar to each other than either is to mice. This suggests that humans and cat may have a more recent common ancestor than has with mice.
+Besides, the higher the sequence similarity, the higher the similarity of amino acids in this ACE2 receptor.
+The difference of these sequences of ACE2 reflect the adaption of different environment. For example, differences in ACE2 amino acid sequences have been linked to differences in susceptibility to SARS-CoV-2 infection between species.
