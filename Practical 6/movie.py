@@ -1,20 +1,34 @@
 import matplotlib.pyplot as plt
-# Define dictionary datas nd choose colors for each data
-movie ={'Comedy':73, 'Action': 42, 'Romance': 38, 'Fantasy': 28, 'Science-fiction':22,'Horror':19, 'Crime':18, 'Documentary':12, 'History':8, 'War':7}
-colors= ['red', 'wheat', 'lightgray', 'green','grey','lightpink','teal','beige','lightcoral','gold']
+
+# Define dictionary data and choose colors for each data
+movie = {
+    'Comedy': 73, 'Action': 42, 'Romance': 38, 'Fantasy': 28, 'Science-fiction': 22,
+    'Horror': 19, 'Crime': 18, 'Documentary': 12, 'History': 8, 'War': 7
+}
+
 # Extract a list of labels and numeric values
 labels = list(movie.keys())
 values = list(movie.values())
 
-# Draw a pie chart
-plt.pie(values, labels=labels, colors= colors , autopct='%1.1f%%',)
-# show legend and adjust the size of it
-plt.legend(bbox_to_anchor=(0.98, 1.10),fontsize='small')
-# show the image
-plt.show()
-
-# set the requested genre, you can choose any tpye of movie in dictionary,like Action....
+# Set the requested genre; you can choose any type of movie in the dictionary, e.g., "Horror"
 movie_genre = "Horror"
 
-# print the number of students who like the requested genre
-print(movie[movie_genre])
+# Create a list of colors, highlighting the requested genre
+colors = ['red' if label == movie_genre else 'lightgray' for label in labels]
+
+# Create a bar plot
+plt.bar(labels, values, color=colors)
+
+# Add labels and titles
+plt.xlabel('Movie Genre')
+plt.ylabel('Number of Movies')
+plt.title('Distribution of Movie Genres')
+
+# Set the font size of x-axis tick labels
+plt.xticks(fontsize=6)
+
+# Show the bar plot
+plt.show()
+
+# Print the number of movies in the requested genre
+print(f"Number of movies in the '{movie_genre}' genre: {movie[movie_genre]}")
