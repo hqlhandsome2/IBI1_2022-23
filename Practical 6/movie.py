@@ -6,6 +6,7 @@ movie = {
     'Horror': 19, 'Crime': 18, 'Documentary': 12, 'History': 8, 'War': 7
 }
 
+print(movie)
 # Extract a list of labels and numeric values
 labels = list(movie.keys())
 values = list(movie.values())
